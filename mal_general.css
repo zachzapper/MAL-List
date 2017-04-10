@@ -1,0 +1,155 @@
+body{
+	background-attachment:fixed;
+	background-color: #000;
+	background-repeat: no-repeat;
+	font-family: 'Segoe UI', 'Century Gothic', sans-serif;
+	font-size: 11px;
+	background-size: cover;
+	-moz-background-size: cover;
+}
+
+#list_surround{
+	margin: -25px auto 0;
+	width: 950px;
+}
+
+.table_header{
+	border-bottom: 0px !important;
+	border-style: solid;
+	border-width: 1px 1px 0px 0px;
+	padding: 2px;
+}
+
+.td1, .td2{
+	border-style: solid;
+	border-width: 1px 1px 0 0;
+	padding: 2px;
+}
+
+td{
+	-o-transition: background-color .2s linear;
+	-moz-transition: background-color .2s linear;
+	-webkit-transition: background-color .2s linear;
+	transition: background-color .2s linear;
+}
+
+
+/* Brackets for small text like 'rewatching' or 'airing' */
+.td1 > small:before, .td2 > small:before{
+	content:'(';
+}
+
+.td1 > small:after, .td2 > small:after{
+	content:')';
+}
+
+.borderRBL{
+	border-width: 1px 1px 0 36px !important;
+}
+
+.header_title{
+	color: transparent;
+	content: none;
+	height: 60px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	width: 520px;
+}
+
+.header_cw div{
+	background-position: 0px 0px;
+}
+
+.header_completed div{
+	background-position: 0px -60px;
+}
+
+.header_onhold div{
+	background-position: 0px -120px;
+}
+
+.header_dropped div{
+	background-position: 0px -240px;
+}
+
+.header_ptw div{
+	background-position: 0px -180px;
+}
+
+.category_totals{
+	padding-left: 37px !important;
+	padding: 2px;
+	border: solid 1px;
+}
+
+#grand_totals{
+	text-align: center;
+	display: block;
+	padding: 5px;
+}
+
+#copyright{
+	margin-bottom: 40px;
+	padding: 2px;
+	border: 1px solid;
+}
+
+#copyright br{display:none}
+
+
+#list_surround > table:first-of-type {
+	bottom: 0;
+	margin-left: -25px;
+	position: fixed;
+	width: 1000px;
+}
+
+/* Setting elements to display pure image */
+#list_surround > table:first-of-type td{
+	background-color: transparent;
+	border-width: 0 !important;
+}
+
+.status_not_selected, .status_selected{
+	border-width: 0 !important;
+	padding: 0 !important;
+	width: auto !important;
+}
+
+.status_not_selected > a, .status_selected > a{
+	color: transparent !important;
+	content: none;
+	display: block;
+	height: 30px;
+	width: 150px;
+}
+
+.status_not_selected > a[href*="status=1"],.status_selected > a[href*="status=1"],.status_not_selected > a[href*="status=7"], .status_selected > a[href*="status=7"]{
+	width: 200px;
+}
+
+.status_not_selected > a[href*="status=1"]{background-position: 0px 0px}
+.status_not_selected > a[href*="status=1"]:hover{background-position: 0px 30px}
+.status_not_selected > a[href*="status=1"]:active, .status_selected > a[href*="status=1"]{background-position: 0px 60px}
+
+.status_not_selected > a[href*="status=2"]{background-position: -200px 0px}
+.status_not_selected > a[href*="status=2"]:hover{background-position: -200px 30px}
+.status_not_selected > a[href*="status=2"]:active, .status_selected > a[href*="status=2"]{background-position: -200px 60px}
+
+.status_not_selected > a[href*="status=3"]{background-position: -350px 0px}
+.status_not_selected > a[href*="status=3"]:hover{background-position: -350px 30px}
+.status_not_selected > a[href*="status=3"]:active, .status_selected > a[href*="status=3"]{background-position: -350px 60px}
+
+.status_not_selected > a[href*="status=4"]{background-position: -500px 0px}
+.status_not_selected > a[href*="status=4"]:hover{background-position: -500px 30px}
+.status_not_selected > a[href*="status=4"]:active, .status_selected > a[href*="status=4"]{background-position: -500px 60px}
+
+.status_not_selected > a[href*="status=6"]{background-position: -650px 0px}
+.status_not_selected > a[href*="status=6"]:hover{background-position: -650px 30px}
+.status_not_selected > a[href*="status=6"]:active, .status_selected > a[href*="status=6"]{background-position: -650px 60px}
+
+.status_not_selected > a[href*="status=7"]{background-position: -800px 0px}
+.status_not_selected > a[href*="status=7"]:hover{background-position: -800px 30px}
+.status_not_selected > a[href*="status=7"]:active, .status_selected > a[href*="status=7"]{background-position: -800px 60px}
